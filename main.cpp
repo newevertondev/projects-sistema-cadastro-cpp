@@ -62,25 +62,3 @@ int main()
     
     return 0;
 }
-
-----------------
-
-#include <bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-  int chute;
-  
-  cout << "Adivinhe o número que estou pensando!" <<endl;
-  cin >> chute;
-  
-  while (chute != 2018)
-  {
-      cout << "Errou, tente novamente: " << chute <<endl;
-      
-      cin >> chute;
-  }
-    
-    return 0;
-}
