@@ -9,7 +9,6 @@ int main()
     string userLogin;
     string senha;
     string senhaLogin;
-    int contador;
     
     cout <<" _-_-_-_ Seja bem vindo! _-_-_-_ "<<endl <<endl;
     
