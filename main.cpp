@@ -31,33 +31,33 @@ int main()
     cout <<"Digite seu user: ";
     cin >> userLogin;
     
-    if (userLogin != user){
-        cout << "Seu usuário não existe!";
-        return 0;
+    while (userLogin != user) {
+        cout <<"Seu usuário não existe, tente novamente: "<<endl<<endl;
+        cin >>userLogin;
     }
     
-    if (userLogin == user) {
-        cout << user <<", digite sua senha: ";
-        cin>>senhaLogin;
+    cout <<"Digite sua senha: "<<endl;
+    cin >> senhaLogin;
+    
+    while (senhaLogin != senha) {
+        cout <<"Sua senha está errada, tente novamente: "<<endl;
+        cin >>senhaLogin;
     }
     
-    if (senhaLogin != senha) {
-        cout << "Sua senha está errada!";
-        return 0;
-    }
     
     if ((userLogin == user) && (senhaLogin == senha)) {
         cout << " ________________________________ "<<endl;
-        cout << "| Login realizado com sucesso!   |"<<endl;
-        cout << "|                                |"<<endl;
-        cout << "| Nome: " <<nome<< "!            |"<<endl;
-        cout << "| Usuario: " <<user<< "          |"<<endl;
-        cout << "| Senha: " <<senha<< "           |"<<endl;
-        cout << "|                                |"<<endl;
-        cout << "|                                |"<<endl;
-        cout << "|                                |"<<endl;
+        cout << "   Login realizado com sucesso!   "<<endl;
+        cout << "                                "<<endl;
+        cout << " Nome: " <<nome<< "           "<<endl;
+        cout << " Usuario: " <<user<< "          "<<endl;
+        cout << " Senha: " <<senha<< "           "<<endl;
+        cout << "                                "<<endl;
+        cout << "                                "<<endl;
+        cout << "                                  "<<endl;
         cout << "----------------------------------"<<endl;
     }
     
     return 0;
 }
+
